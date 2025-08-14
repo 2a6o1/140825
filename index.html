@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Popup inicial -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>Feliz cumpleaños mi vida, preciosa hermosa corazón</h2>
+            <button id="startBtn">Empezar</button>
+        </div>
+    </div>
+
+
+    <div id="gameContainer" class="game-container">
+        <h1>Pixel Tamagotchi</h1>
+        <canvas id="screen" width="320" height="320"></canvas>
+        <div class="buttons">
+            <button id="feedBtn">🍔 Feed</button>
+            <button id="playBtn">🎮 Play</button>
+            <button id="restBtn">💤 Rest</button>
+        </div>
+        <p>Use arrow keys to move your pet!</p>
+        <div class="stats">
+            <p>Hunger: <span id="hunger">50</span></p>
+            <p>Happiness: <span id="happiness">50</span></p>
+            <p>Energy: <span id="energy">50</span></p>
+        </div>
+        <div>
+            <button id="drawCharBtn">Draw Character</button>
+            <canvas id="charEditor" width="120" height="120" style="display:none; border:1px solid #555;"></canvas>
+            <button id="saveCharBtn" style="display:none;">Save Character</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
